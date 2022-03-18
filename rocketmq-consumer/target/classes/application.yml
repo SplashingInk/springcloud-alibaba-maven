@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: rocketmq-consumer
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination:  joker
+          contentType: application/json
+          group: myself-group
+      rocketmq:
+        binder:
+          name-server: 192.168.188.130:9876
+
+server:
+  port: 8201
+rocketmq:
+  name-server: 192.168.188.130:9876

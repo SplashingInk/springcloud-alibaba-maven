@@ -1,0 +1,9 @@
+server:
+  port: 7001
+
+spring:
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 192.168.188.130:1314
